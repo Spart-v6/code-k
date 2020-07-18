@@ -280,94 +280,15 @@
     </style>
 
     <!-- Memes styling -->
-    <style class="text/css">
-        html {
-            scroll-behavior: smooth;
-        }
-
-        header {
-            padding: 0 0;
-        }
-
-        header h1 {
-            color: rgb(56 44 44 / 87%);
-            text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.4);
-            text-align: center;
-            font-size: 40px;
-            letter-spacing: 0.4px;
-            font-family: "Raleway", sans-serif;
-        }
-
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            justify-content: center;
-            padding: 0 30px;
-        }
-
-        .container .thumbex {
-            margin: 10px 20px 30px;
-            width: 100%;
-            min-width: 250px;
-            max-width: 435px;
-            height: 300px;
-            -webkit-flex: 1;
-            -ms-flex: 1;
-            flex: 1;
-            overflow: hidden;
-            outline: 2px solid white;
-            outline-offset: -15px;
-            background: #c4b6b680;
-            box-shadow: 5px 10px 40px 5px rgba(0, 0, 0, 0.5);
-        }
-
-        .container .thumbex .thumbnail {
-            overflow: hidden;
-            min-width: 250px;
-            height: 300px;
-            position: relative;
-            opacity: 0.88;
-            backface-visibility: hidden;
-            transition: all 0.4s ease-out;
-        }
-
-        .container .thumbex .thumbnail img {
-            position: absolute;
-            z-index: 1;
-            left: 50%;
-            top: 50%;
-            height: 90%;
-            width: auto;
-            transform: translate(-50%, -50%);
-            backface-visibility: hidden;
-        }
-
-        /* .container .thumbex .thumbnail span {
-        position: absolute;
-        z-index: 2;
-        top: calc(150px - 20px);
-        left: 0;
-        right: 0;
-        background: rgba(0, 0, 0, 0.7);
-        padding: 10px 50px;
-        margin: 0 45px;
-        text-align: center;
-        font-size: 24px;
-        color: white;
-        font-weight: 300;
-        font-family: "Raleway", sans-serif;
-        letter-spacing: 0.2px;
-        transition: all 0.3s ease-out;
-    } */
-        .container .thumbex .thumbnail:hover {
-            backface-visibility: hidden;
-            transform: scale(1.15, 1.15);
-            opacity: 1;
-        }
-
-        .container .thumbex .thumbnail:hover span {
-            opacity: 0;
+    <style>
+        .card{
+            max-width: 100%;
+            max-height: 100%;
+            display: flex; 
+            /* width: 250px;         */
+            border: 5px solid black;
+            /* height: 280px; */
+            /* height: 100px; */
         }
     </style>
 
@@ -740,86 +661,201 @@
 
     <!-- Memes section -->
 
-    <header>
-        <h1 class="py-5">Find your favorite meme xD...</h1>
-    </header>
-    <div class="container">
-        <div class="thumbex">
-            <div class="thumbnail">
-                <a href=""><img src="1.jpg" /></a>
+    <section class="pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h3 class="mb-3">Find your favourite meme xD... </h3>
+                </div>
+                <div class="col-6 text-right">
+                    <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button"
+                        data-slide="prev">
+                        <i class="fa fa-arrow-left"></i>
+                    </a>
+                    <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                        <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="col-12">
+                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row">
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="1.jpg">
+                                            </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="2.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="3.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row">
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="4.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="7.png">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="8.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row">
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="10.png">
+                                            </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="11.png">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="5.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-item">
+                                <div class="row">
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="20.jpg">
+                                            </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="16.png">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="14.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row">
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="25.jpg">
+                                            </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="18.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="19.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="row">
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="9.png">
+                                            </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="6.png">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="17.jpg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="carousel-item">
+                                <div class="row">
+
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="26.jpg">
+                                            </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="12.png">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid" alt="100%x280"
+                                                src="27.png">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="thumbex">
-            <div class="thumbnail">
-                <a href=""><img src="2.jpg" /></a>
-            </div>
-        </div>
-        <div class="thumbex">
-            <div class="thumbnail">
-                <a href=""><img src="3.jpg" /></a>
-            </div>
-        </div>
-        <div class="thumbex">
-            <div class="thumbnail">
-                <a href=""><img src="4.jpg" /></a>
-            </div>
-        </div>
-        <div class="thumbex">
-            <div class="thumbnail">
-                <a href=""><img src="5.png" /></a>
-            </div>
-        </div>
-        <div class="thumbex">
-            <div class="thumbnail">
-                <a href=""><img src="7.png" /></a>
-            </div>
-        </div>
-        <div class="thumbex">
-            <div class="thumbnail">
-                <a href=""><img src="8.png" /></a>
-            </div>
-        </div>
-        <div class="thumbex">
-            <div class="thumbnail">
-                <a href=""><img src="9.png" /></a>
-            </div>
-        </div>
-        <div class="thumbex">
-            <div class="thumbnail">
-                <a href=""><img src="10.png" /></a>
-            </div>
-        </div>
-        <div class="thumbex">
-            <div class="thumbnail">
-                <a href=""><img src="11.png" /></a>
-            </div>
-        </div>
-        <div class="thumbex">
-            <div class="thumbnail">
-                <a href=""><img src="13.png" /></a>
-            </div>
-        </div>
-        <div class="thumbex">
-            <div class="thumbnail">
-                <a href=""><img src="14.png" /></a>
-            </div>
-        </div>
-        <div class="thumbex">
-            <div class="thumbnail">
-                <a href=""><img src="18.jpg" /></a>
-            </div>
-        </div>
-        <div class="thumbex">
-            <div class="thumbnail">
-                <a href=""><img src="17.jpg" /></a>
-            </div>
-        </div>
-        <div class="thumbex">
-            <div class="thumbnail">
-                <a href=""><img src="16.png" /></a>
-            </div>
-        </div>
-    </div>
+    </section>
+
 
 
     <!-- Footer -->
