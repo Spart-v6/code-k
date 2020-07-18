@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Let's have fun</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <!-- Main 1 and 2 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Linked style sheets -->
+    <link rel="stylesheet" href="fun.css">
+    <link rel="stylesheet" href="spinner.css">
+    <link rel="stylesheet" href="funAnime.css">
+
+    <!-- FontAwesome icons -->
+    <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+
+    <!-- For quotes -->
+    <link rel="stylesheet" href="quote.css">
+
+    <!-- For footer CSS -->
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+    <!-- For animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+
+    <!-- Memes headers -->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="//production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" /> -->
+    <link rel="mask-icon" type=""
+        href="//production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg"
+        color="#111" />
+    <link rel="canonical"
+        href="https://codepen.io/sara_bianchi94/pen/LLOVYy?depth=everything&limit=all&order=popularity&page=77&q=image&show_forks=false" />
+    <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
+    <!-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script> -->
+    <!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+    <!-- <script src='//production-assets.codepen.io/assets/editor/live/console_runner-079c09a0e3b9ff743e39ee2d5637b9216b3545af0de366d4b9aad9dc87e26bfd.js'></script> -->
+    <!-- <script src='//production-assets.codepen.io/assets/editor/live/events_runner-73716630c22bbc8cff4bd0f07b135f00a0bdc5d14629260c3ec49e5606f98fdd.js'></script> -->
+    <!-- <script src='//production-assets.codepen.io/assets/editor/live/css_live_reload_init-2c0dc5167d60a5af3ee189d570b1835129687ea2a61bee3513dee3a50c115a77.js'></script> -->
+
+
+    <!-- Main 1 style -->
+    <style type="text/css">
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin-top: 0px;
+        }
+
+        /* Feature Box
+---------------------*/
+        .feature-box-1 {
+            padding: 32px;
+            box-shadow: 0 0 30px rgba(31, 45, 61, 0.125);
+            margin: 15px 0;
+            position: relative;
+            z-index: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            -moz-transition: ease all 0.35s;
+            -o-transition: ease all 0.35s;
+            -webkit-transition: ease all 0.35s;
+            transition: ease all 0.35s;
+            top: 0;
+        }
+
+        .feature-box-1 * {
+            -moz-transition: ease all 0.35s;
+            -o-transition: ease all 0.35s;
+            -webkit-transition: ease all 0.35s;
+            transition: ease all 0.35s;
+        }
+
+        .feature-box-1 .icon {
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            background: #873fd7;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 50%;
+            margin-bottom: 22px;
+            font-size: 27px;
+        }
+
+        .feature-box-1 .icon i {
+            line-height: 70px;
+        }
+
+        .feature-box-1 h5 {
+            color: #20247b;
+            font-weight: 600;
+        }
+
+        .feature-box-1 p {
+            margin: 0;
+        }
+
+        .feature-box-1:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: auto;
+            right: 0;
+            border-radius: 10px;
+            width: 0;
+            background: linear-gradient(#c33764, #1d2671);
+            z-index: -1;
+            -moz-transition: ease all 0.35s;
+            -o-transition: ease all 0.35s;
+            -webkit-transition: ease all 0.35s;
+            transition: ease all 0.35s;
+        }
+
+        .feature-box-1:hover {
+            top: -5px;
+        }
+
+        .feature-box-1:hover h5 {
+            color: #ffffff;
+        }
+
+        .feature-box-1:hover p {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .feature-box-1:hover:after {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            left: 0;
+            right: auto;
+        }
+
+        .section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .section-title {
+            padding-bottom: 45px;
+        }
+
+        .section-title h2 {
+            font-weight: 700;
+            color: #20247b;
+            font-size: 45px;
+            margin: 0 0 15px;
+            border-left: 5px solid #873fd7;
+            ;
+            padding-left: 15px;
+        }
+    </style>
+
+    <!-- Main 2 style -->
+    <style type="text/css">
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin-top: 0px;
+        }
+
+        .section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .gray-bg {
+            background-color: #f5f5f5;
+        }
+
+        .section-title h2 {
+            font-weight: 700;
+            color: #20247b;
+            font-size: 45px;
+            margin: 0 0 15px;
+            border-left: 5px solid #fc5356;
+            padding-left: 15px;
+        }
+
+        .section-title {
+            padding-bottom: 45px;
+        }
+
+        .section-title p {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        /* Resume Box---------------------*/
+        .resume-box {
+            background: #ffffff;
+            box-shadow: 0 0 1.25rem rgba(31, 45, 61, 0.08);
+            border-radius: 10px;
+        }
+
+        .resume-box ul {
+            margin: 0;
+            padding: 30px 20px;
+            list-style: none;
+        }
+
+        .resume-box li {
+            position: relative;
+            padding: 0 20px 0 60px;
+            margin: 0 0 30px;
+        }
+
+        .resume-box li:last-child {
+            margin-bottom: 0;
+        }
+
+        .resume-box li:after {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 20px;
+            border-left: 1px dashed #fc5356;
+            bottom: 0;
+        }
+
+        .resume-box .icon {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            color: #fc5356;
+            line-height: 40px;
+            background: #ffffff;
+            text-align: center;
+            z-index: 1;
+            border: 1px dashed;
+            border-radius: 50%;
+        }
+
+        .resume-box .time {
+            background: #fc5356;
+            color: #ffffff;
+            font-size: 10px;
+            padding: 2px 10px;
+            display: inline-block;
+            margin-bottom: 12px;
+            border-radius: 20px;
+            font-weight: 600;
+        }
+
+        .resume-box h5 {
+            font-weight: 700;
+            color: #20247b;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .resume-box p {
+            margin: 0;
+        }
+
+        .resume-box li:after {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 20px;
+            border-left: 1px dashed #fc5356;
+            bottom: 0;
+        }
+    </style>
+
+    <!-- Memes styling -->
+    <style class="text/css">
+        html {
+            scroll-behavior: smooth;
+        }
+
+        header {
+            padding: 0 0;
+        }
+
+        header h1 {
+            color: rgb(56 44 44 / 87%);
+            text-shadow: 1px 3px 4px rgba(0, 0, 0, 0.4);
+            text-align: center;
+            font-size: 40px;
+            letter-spacing: 0.4px;
+            font-family: "Raleway", sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            padding: 0 30px;
+        }
+
+        .container .thumbex {
+            margin: 10px 20px 30px;
+            width: 100%;
+            min-width: 250px;
+            max-width: 435px;
+            height: 300px;
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+            overflow: hidden;
+            outline: 2px solid white;
+            outline-offset: -15px;
+            background: #c4b6b680;
+            box-shadow: 5px 10px 40px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .container .thumbex .thumbnail {
+            overflow: hidden;
+            min-width: 250px;
+            height: 300px;
+            position: relative;
+            opacity: 0.88;
+            backface-visibility: hidden;
+            transition: all 0.4s ease-out;
+        }
+
+        .container .thumbex .thumbnail img {
+            position: absolute;
+            z-index: 1;
+            left: 50%;
+            top: 50%;
+            height: 90%;
+            width: auto;
+            transform: translate(-50%, -50%);
+            backface-visibility: hidden;
+        }
+
+        /* .container .thumbex .thumbnail span {
+        position: absolute;
+        z-index: 2;
+        top: calc(150px - 20px);
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 10px 50px;
+        margin: 0 45px;
+        text-align: center;
+        font-size: 24px;
+        color: white;
+        font-weight: 300;
+        font-family: "Raleway", sans-serif;
+        letter-spacing: 0.2px;
+        transition: all 0.3s ease-out;
+    } */
+        .container .thumbex .thumbnail:hover {
+            backface-visibility: hidden;
+            transform: scale(1.15, 1.15);
+            opacity: 1;
+        }
+
+        .container .thumbex .thumbnail:hover span {
+            opacity: 0;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+        integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+
+    <!-- For Spinner -->
+
+    <div class="loader text-center" id="loading">
+        <div class="loader-inner">
+
+            <!-- Animated Spinner -->
+            <div class="lds-roller mb-3">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <!-- Spinner Description Text [For Demo Purpose]-->
+            <h4 class="font-weight-bold">Wait for it..</h4>
+        </div>
+    </div>
+
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top header">
+            <div class="container">
+                <div class="col-2 pl-md-0 text-left">
+                    <a href="/index.html" style="text-decoration: none; color: rgba(255,255,255,.5);"
+                        style="font-family: 'Varela Round', sans-serif;">
+                        <h3>CodKing</h3>
+                    </a>
+                </div>
+
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                    data-target=".navbar-collapse-1" aria-controls="navbarNav6" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="navbar-collapse justify-content-center col-md-8 navbar-collapse-1 collapse">
+                    <ul class="navbar-nav justify-content-center">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/index.html" id="homeItems"
+                                style="font-family: 'Varela Round', sans-serif;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/updates.html" id="homeItems"
+                                style="font-family: 'Varela Round', sans-serif;">Updates</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/fun.html" id="homeItems"
+                                style="font-family: 'Varela Round', sans-serif;">Fun</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contact.html" id="homeItems"
+                                style="font-family: 'Varela Round', sans-serif;">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="navbar-collapse justify-content-end col-md-2 navbar-collapse-1 pr-md-0 collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="btn btn-outline-secondary ml-md-3" href="/register.html"
+                                style="color: white;font-family: 'Varela Round', sans-serif;">Log In →</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- First page animation -->
+    <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="animation-area">
+                    <ul class="box-area">
+                        <div class="carousel-caption d-md-block">
+                            <h3 class="display-4 animate__animated animate__zoomIn">Without Fun it's nothing</h3>
+                            <p class="lead animate__animated animate__zoomIn">Scroll below to find some hacks with memes</p>
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                        </div>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <!-- Page Content 1 -->
+    <section class="py-3" style="background: #ececec75;
+    box-shadow: 4px 6px 20px 0px rgb(192 192 192 / 80%);">
+        <div class="container">
+          <div class="row">
+              <div class="container">
+                  <blockquote class="quote-card">
+                    <p>
+                        Everybody should learn to program a computer, because it teaches you how to think.
+                    </p>
+                    <cite>
+                        Elon Musk
+                    </cite>
+                  </blockquote>
+                </div>
+            </div>
+          </div>
+    </section>
+
+
+    <!-- Main1 -->
+    <section class="section services-section" id="services">
+        <div class="container">
+            <div class="row" style="width: 100%;">
+                <div class="col-lg-6">
+                    <div class="section-title">
+                        <h2>Computer life hacks </h2>
+                        <p>These hacks will make your life easier, infact computer life easier.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- feaure box -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-box-1">
+                        <div class="icon">
+                            <i class="fab fa-google-plus-g"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h5>Ask Google about any problem you’re facing.</h5>
+                            <p>You can type your problem into the Google search bar and read what various tech forums
+                                have to tell you. You will probably find the solution.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- / -->
+                <!-- feaure box -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-box-1">
+                        <div class="icon">
+                            <i class="fa fa-laptop"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h5>A laptop battery charges faster when in airplane mode.</h5>
+                            <p>Turns off Wi-Fi and Bluetooth. Expect to see your laptop fully charged 10-15 minutes
+                                faster than if you had the airplane mode off.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- / -->
+                <!-- feaure box -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-box-1">
+                        <div class="icon">
+                            <i class="fa  fa-download"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h5>Download Google image by pressing Alt and clicking on it.</h5>
+                            <p>Automatically downloads the image. Works only in google images,it will be saved on your
+                                computer in your Downloads folder.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- / -->
+                <!-- feaure box -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-box-1">
+                        <div class="icon">
+                            <i class="fa fa-eye-slash"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h5>Hide your IP address.</h5>
+                            <p>Hiding IP address means nobody sees what you’re doing after you hid your IP. You need to
+                                install a good VPN on your internet browser or VPN can be added externally</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- / -->
+                <!-- feaure box -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-box-1">
+                        <div class="icon">
+                            <i class="fa fa-hdd-o"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h5>Clean and organize your PC</h5>
+                            <p>Untidy desktop is equivalent to your house. Clean your desktop and organizse it as you do
+                                in your home. This action will instantly maximize your computer's speed.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- / -->
+                <!-- feaure box -->
+                <div class="col-sm-6 col-lg-4">
+                    <div class="feature-box-1">
+                        <div class="icon">
+                            <i class="fa fa-play"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h5>Play game</h5>
+                            <p> Don’t have an Internet connection? Play a dinosaur game on Google Chrome. Chrome
+                                displays a dinosaur on the broken page when not connected. Start by pressing Up arrow
+                                key and enjoy!</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- / -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Main 2 -->
+    <section class="section gray-bg" id="resume">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="section-title">
+                        <h2>Tips and Facts</h2>
+                        <p>Below are some tips/tricks for coding dudes and non-coders will get some motivation after
+                            reading cool facts.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 m-15px-tb">
+                    <div class="resume-box">
+                        <ul>
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa-paint-brush"></i>
+                                </div>
+
+                                <h5>Use formatting tools</h5>
+                                <p>It’s easy to write bad, unorganized code, but it’s hard to maintain such code.
+                                    Formatter solves this.</p>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa-comment"></i>
+                                </div>
+
+                                <h5>Write Useful Comments</h5>
+                                <p>Comments are very useful. You won't appreciate them until you leave your thousand
+                                    line of code for couple of days, returning back will make your code senseless.</p>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa-exclamation"></i>
+                                </div>
+
+                                <h5>Use Meaningful Names</h5>
+                                <p>Stop giving names like a, b, c etc.. Use proper names which signifies their roles.
+                                </p>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa fa-code"></i>
+                                </div>
+
+                                <h5>Keep it as simple as you can</h5>
+                                <p>Noob programmer write code that they understand. Pro coders write which gets
+                                    understood by all.</p>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa-clipboard"></i>
+                                </div>
+
+                                <h5>Cut-paste > Copy-paste</h5>
+                                <p>You will always regret if you cut and paste the code.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 m-15px-tb">
+                    <div class="resume-box">
+                        <ul>
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa-terminal"></i>
+                                </div>
+
+                                <!-- <h5>Art Director - Facebook Inc</h5> -->
+                                <p>The first programmer in the world was a woman. Her name was Ada Lovelace.</p>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+
+                                <!-- <h5>Art Director - Facebook Inc</h5> -->
+                                <p>Recent studies have shown that over 70% of coding jobs are in fields outside of
+                                    technology.</p>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa fa-desktop"></i>
+                                </div>
+
+                                <!-- <h5>Art Director - Facebook Inc</h5> -->
+                                <p>The first computer virus was created in 1983.</p>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa fa-gamepad"></i>
+                                </div>
+
+                                <!-- <h5>Art Director - Facebook Inc</h5> -->
+                                <p>The first computer game was created in 1961.</p>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa-power-off"></i>
+                                </div>
+                                <p>Almost any powered with electricity needs to be coded!</p>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa-chevron-up"></i>
+                                </div>
+                                <p>The first programming language (per sé) was called Fortran, and it was created in the
+                                    ’50s.</p>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <p>A coder’s job title can range from: coders, programmers, developers, computer
+                                    scientists and software engineers.</p>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <p>Many coding languages share similar features, so it’s easier to pick up another
+                                    language once you know one.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Memes section -->
+
+    <header>
+        <h1 class="py-5">Find your favorite meme xD...</h1>
+    </header>
+    <div class="container">
+        <div class="thumbex">
+            <div class="thumbnail">
+                <a href=""><img src="/1.jpg" /></a>
+            </div>
+        </div>
+        <div class="thumbex">
+            <div class="thumbnail">
+                <a href=""><img src="/2.jpg" /></a>
+            </div>
+        </div>
+        <div class="thumbex">
+            <div class="thumbnail">
+                <a href=""><img src="/3.jpg" /></a>
+            </div>
+        </div>
+        <div class="thumbex">
+            <div class="thumbnail">
+                <a href=""><img src="/4.jpg" /></a>
+            </div>
+        </div>
+        <div class="thumbex">
+            <div class="thumbnail">
+                <a href=""><img src="/5.png" /></a>
+            </div>
+        </div>
+        <div class="thumbex">
+            <div class="thumbnail">
+                <a href=""><img src="/7.png" /></a>
+            </div>
+        </div>
+        <div class="thumbex">
+            <div class="thumbnail">
+                <a href=""><img src="/8.png" /></a>
+            </div>
+        </div>
+        <div class="thumbex">
+            <div class="thumbnail">
+                <a href=""><img src="/9.png" /></a>
+            </div>
+        </div>
+        <div class="thumbex">
+            <div class="thumbnail">
+                <a href=""><img src="/10.png" /></a>
+            </div>
+        </div>
+        <div class="thumbex">
+            <div class="thumbnail">
+                <a href=""><img src="/11.png" /></a>
+            </div>
+        </div>
+        <div class="thumbex">
+            <div class="thumbnail">
+                <a href=""><img src="/13.png" /></a>
+            </div>
+        </div>
+        <div class="thumbex">
+            <div class="thumbnail">
+                <a href=""><img src="/14.png" /></a>
+            </div>
+        </div>
+        <div class="thumbex">
+            <div class="thumbnail">
+                <a href=""><img src="/18.jpg" /></a>
+            </div>
+        </div>
+        <div class="thumbex">
+            <div class="thumbnail">
+                <a href=""><img src="/17.jpg" /></a>
+            </div>
+        </div>
+        <div class="thumbex">
+            <div class="thumbnail">
+                <a href=""><img src="/16.png" /></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="https://www.facebook.com" id="fb"><i
+                        class="icon ion-social-facebook"></i></a><a href="https://www.gmail.com" id="google"><i
+                        class="icon ion-social-google"></i></a><a href="https://www.twitter.com" id="tw"><i
+                        class="icon ion-social-twitter"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="/updates.html">Updates</a></li>
+                <li class="list-inline-item"><a href="/fun.html">Fun</a></li>
+                <li class="list-inline-item"><a href="/contact.html">Contact</a></li>
+                <li class="list-inline-item"><a href="#">Sign Up</a></li>
+            </ul>
+            <p class="float-right"><a href="#"><img src="up-arrow.png" alt=""
+                        style="margin-right: 8px; margin-top: 4px;"></a></p>
+            <p class="copyright" style="margin-left: 30px;">CodKing © 2020, all rights reserved. Created by Ankur</p>
+        </footer>
+    </div>
+
+
+
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+    <!-- My js -->
+    <script src="app.js"></script>
+    <script src="spinner.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- For footer utilities -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Memes utilities -->
+    <script
+        src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+</body>
+
+</html>

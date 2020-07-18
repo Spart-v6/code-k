@@ -1,0 +1,37 @@
+html{
+    scroll-behavior: smooth;
+}
+/* navbar */
+nav{
+    position: fixed;
+    top:0%;
+    left:0%;
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 100%;
+    padding: 2.5rem;
+    transition: all 0.5s;
+}
+nav.active{
+    position: fixed;
+    top:0%;
+    left:0%;
+    width: 100%;
+    text-align: center;
+    background: rgb(46, 46, 46);
+    z-index: 100%;
+    padding: 11px;
+    transition: all 0.5s;
+}
+
+/* for page content */
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
