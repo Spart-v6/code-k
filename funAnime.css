@@ -1,0 +1,102 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.animation-area{
+    background: linear-gradient(45deg,#7b4397 ,#24dcc4,#1d42a7);
+    width: 100%;
+    height: 74vh;
+}
+.box-area{
+    margin: 0 0;
+    padding: 0 0;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.box-area li{
+    position:absolute;
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: fly 10s linear infinite;
+    bottom: -150px;
+}
+.box-area li:nth-child(1) {
+    width: 40px;
+    height: 40px;
+    left:10%;
+    animation-duration: 8s;
+}
+.box-area li:nth-child(2) {
+    width: 50px;
+    height: 50px;
+    left:35%;
+    animation-duration: 10s;
+    animation-delay: 1s;
+}
+.box-area li:nth-child(3) {
+    width: 40px;
+    height: 40px;
+    left:10%;
+    animation-duration: 8s;
+    animation-delay: 2s;
+}
+.box-area li:nth-child(4) {
+    width: 80px;
+    height: 80px;
+    left:50%;
+    animation-duration: 10s;
+    animation-delay: 0s;
+}
+.box-area li:nth-child(5) {
+    width: 35px;
+    height: 35px;
+    left:55%;
+    animation-duration: 6s;
+    animation-delay: 1s;
+}
+.box-area li:nth-child(6) {
+    width: 45px;
+    height: 45px;
+    left:65%;
+    animation-duration: 8s;
+    animation-delay: 3s;
+}
+.box-area li:nth-child(7) {
+    width: 25px;
+    height: 25px;
+    left:75%;
+    animation-duration: 7s;
+    animation-delay: 2s;
+}
+.box-area li:nth-child(8) {
+    width: 80px;
+    height: 80px;
+    left:80%;
+    animation-duration: 6s;
+    animation-delay: 1s;
+}
+@keyframes fly{
+    0%{
+        bottom: -100px;
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(100px);
+    }
+    100%{
+        bottom: 1080px;
+        transform: translateX(-200px);
+    }
+}
