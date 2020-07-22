@@ -172,12 +172,26 @@ background-attachment: fixed; background-size: cover; -moz-background-size: cove
     margin-bottom: 30px !important;
 }
 
+/* Toggling dark mode */
+
+.darkmode--activated .quote-dark{
+  background-color: #222222;
+  color:#fff;
+}
+.darkmode--activated .dark-card-1{
+  background-color: #222222;
+  color:#fff;
+  border: 1px solid #000000!important;
+}
+.darkmode--activated .dark-card-2{
+  background-color: #222222;
+  color:#fff;
+  border: 1px solid #000000!important;
+}
+.darkmode--activated .dark-card-3{
+  background-color: #222222;
+  color:#fff;
+  border: 1px solid #000000!important;
+}
 
 
-
-/* media queries for first animation */
-/* @media screen and (max-width: 770px) and (min-width: 500px){
-    .animation-area .box-area .carousel-caption d-none d-md-block{
-        display: block;
-    }
-} */
