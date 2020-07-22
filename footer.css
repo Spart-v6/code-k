@@ -72,3 +72,18 @@ color:#aaa;
 margin-bottom:0;
 }
 
+
+/* Toggling dark mode */
+
+
+.darkmode--activated .dark-footer {
+    color: white;
+}
+.darkmode--activated .dark-footer-social {
+    color: white;
+}
+.darkmode--activated .dark-footer-icon {
+    filter: invert(1);
+}
+
+
