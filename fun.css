@@ -60,3 +60,7 @@ nav.active{
   .darkmode--activated .dark-headings{
     color: #0077ff;
   }
+  .darkmode--activated .dark-meme-heading{
+    color: #ffffff;
+  }
+
