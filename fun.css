@@ -61,6 +61,6 @@ nav.active{
     color: #0077ff;
   }
   .darkmode--activated .dark-meme-heading{
-    color: #ffffff;
+    color: #ffffff !important;
   }
 
