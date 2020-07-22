@@ -166,15 +166,8 @@ nav.active{
     background-size: cover;
 }
 
-/* chart css */
-/* @media screen and (prefers-color-scheme: dark){
-    .thisChart{
-        color: white;
-        background-color: white;
-    }
-} */
-
-/* hr css */
-/* hr.dashed {
-    border-top: 2px dashed #999;
-} */
+/* For dark mode */
+.darkmode--activated .quote-dark{
+    background-color: #222222;
+    color:#fff;
+  }
